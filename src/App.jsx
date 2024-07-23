@@ -1,15 +1,21 @@
-import { useState } from 'react' 
-import './App.css'
-import { Home } from './Pages'
+import { useState } from "react";
+import "./App.css";
+import { Home } from "./Pages";
+import { Outlet } from "react-router-dom";
+import { Footer,Navbar } from "./Components";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-       <Home/>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
