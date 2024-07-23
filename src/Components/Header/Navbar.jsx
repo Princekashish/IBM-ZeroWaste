@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { logo } from "../../assets";
-import { Link } from "react-dom";
+// import { Link } from "react-dom";
 import { Button } from "../index";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
-
+import { Link } from 'react-router-dom'
 function Navbar() {
   const [toggle, setToggle] = useState(false);
 
@@ -15,7 +15,7 @@ function Navbar() {
     },
     {
       name: "About",
-      link: "/about",
+      link: "/aboutus",
     },
     {
       name: "Testimanials",
@@ -28,21 +28,25 @@ function Navbar() {
   ];
 
   return (
-    <div className=" sm:p-6 p-3 flex justify-between items-center w-full">
+    <div className=" bg-[#EEF7F8] lg:p-6 p-3 flex justify-between items-center w-full">
       <div>
-        <img src={logo} alt="logo" className="sm:max-h-14  max-h-9  " />
+        <Link to='/'>
+        <img src={logo} alt="logo" className="lg:max-h-14  max-h-9  " />
+        </Link>
       </div>
 
-      <div className="sm:flex hidden  w-1/2 items-center ">
-        <div className=" sm:flex  justify-around w-full ">
+      <div className="lg:flex hidden  w-1/2 items-center ">
+        <div className=" lg:flex  justify-around w-full ">
           {navItems.map((item, index) => {
             return (
+              <Link to={item.link}>
               <div
                 key={index}
                 className="font-bold text-xl ]cursor-pointer text-[#484848]"
-              >
+                >
                 <h4>{item.name}</h4>
               </div>
+                </Link>
             );
           })}
         </div>
@@ -51,7 +55,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="sm:hidden flex-col felx-1 justify-end  ">
+      <div className="lg:hidden flex-col felx-1 justify-end  ">
         <div>
           <button onClick={() => setToggle((prev) => !prev)}>
             {!toggle ? (
@@ -65,6 +69,7 @@ function Navbar() {
           <div className="   w-full ">
             {navItems.map((item, index) => {
               return (
+                
                 <div
                   key={index}
                   className="font-bold text-xl ]cursor-pointer text-[#484848]"
