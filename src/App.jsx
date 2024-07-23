@@ -7,7 +7,13 @@ function App() {
 
   return (
     <>
-      <Home />
+       <div className="bg-[#EEF7F8]">
+        <Navbar />
+        <main>
+          <Outlet />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
