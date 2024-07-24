@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 function Education() {
   return (
     <div className="p-0">
-      <div>
+      <div className="p-4">
         <Link to='/'>
         <h1 className=" lg:text-xl text-sm font-semibold flex gap-2 items-center">
           <FaArrowLeft />
@@ -131,7 +131,7 @@ function Education() {
         style={{
           backgroundImage: `url(${blogbg})`,
         }}
-        className="my-8"
+        className="my-8 p-2"
       >
         <h1 className="font-semibold text-[41px] text-center">BLOG</h1>
         <div className="flex lg:gap-8 gap-2 lg:p-6 p-2 ">
@@ -203,7 +203,7 @@ function Education() {
           </div>
         </div>
         <div className="flex justify-center">
-        <Button msg="See More" className="bg-[#EFEFEF] text-[#E6511A] rounded-lg m-4 border-2 border-black w-32"/>
+        <Button msg="See More" className="bg-[#EFEFEF] text-[#e66435] rounded-lg m-4 border-2 border-black w-32"/>
         </div>
       </div>
     </div>
