@@ -7,6 +7,7 @@ import image1 from "./image1.png"
 import gallery from "./gallery.png"
 import blogbg from "./blogbg.png"
 import cardimg from "./cardimg.png"
+import signup from './signup.png'
 export{
     logo,
     location,
@@ -16,5 +17,6 @@ export{
     image1,
     gallery,
     blogbg,
-    cardimg
+    cardimg,
+    signup
 }

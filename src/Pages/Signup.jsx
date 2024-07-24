@@ -1,46 +1,37 @@
-import React from 'react'
+import React from "react";
+import { signup } from "../assets";
 
 function Signup() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-orange-400">
-      <div className="flex flex-row items-center w-full max-w-4xl">
-        <div className="w-1/2 p-8">
+      <div className="flex flex-row items-center justify-center  w-full ">
+        <div className="w-1/2 p-8 hidden xl:block">
           <div className="flex items-center justify-center h-full">
-            <img
-              src="../assets/signup.png"
-              alt="Sign Up"
-              className="w-full h-auto"
-            />
+            <img src={signup} alt="Sign Up" className="w-full h-auto" />
           </div>
         </div>
-        <div className="w-1/2 p-8 bg-gray-100 shadow-lg">
+        <div className=" p-8 bg-gray-100 shadow-lg rounded-2xl">
           <h2 className="mb-6 text-2xl font-bold text-center">SIGN UP</h2>
-          <form className="flex flex-col">
-            <div className="flex mb-4">
-              <input
-                type="text"
-                placeholder="Enter Name"
-                className="flex-1 p-2 mr-2 border border-gray-300 rounded"
-              />
-              <input
-                type="email"
-                placeholder="Email ID"
-                className="flex-1 p-2 ml-2 border border-gray-300 rounded"
-              />
-            </div>
+          <form className="flex flex-col gap-5">
             <input
               type="text"
-              placeholder="Create Username"
-              className="p-2 mb-4 border border-gray-300 rounded"
+              placeholder="Username"
+              className="py-3  rounded-full px-12 outline-none"
             />
             <input
+              type="email"
+              placeholder="Email ID"
+              className=" py-3  rounded-full px-12 outline-none"
+            />
+
+            <input
               type="password"
-              placeholder="Create Password"
-              className="p-2 mb-6 border border-gray-300 rounded"
+              placeholder="password"
+              className="py-3  rounded-full px-12 outline-none"
             />
             <button
               type="submit"
-              className="p-2 text-white bg-orange-500 rounded hover:bg-orange-600"
+              className="p-2 text-white bg-orange-500  hover:bg-orange-600 rounded-full"
             >
               SIGN UP
             </button>
@@ -63,6 +54,6 @@ function Signup() {
       </button>
     </div>
   );
-};
+}
 
-export default Signup
+export default Signup;

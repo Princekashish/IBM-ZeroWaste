@@ -134,7 +134,7 @@ export default function Service() {
         <h1 className="text-white font-poppins text-4xl font-bold tracking-tighter  leading-10 lg:tracking-wider">
           Why donation is important.....?
         </h1>
-        <p className="text-white text-sm mt-2 font-light md:text-xl">
+        <p className="text-white text-sm mt-2 font-light md:text-xl xl:text-sm">
           Food donations offer numerous benefits, both to the recipients and the
           broader community. They directly combat hunger and food insecurity,
           ensuring that individuals and families in need have access to

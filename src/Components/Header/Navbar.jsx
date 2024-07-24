@@ -31,7 +31,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="sticky top-0 shadow-md bg-[#EEF7F8] lg:p-5 p-4 flex justify-between items-center w-full">
+    <div className="sticky top-0 shadow-md bg-[#EEF7F8] lg:p-5 p-4 flex justify-between items-center w-full z-20">
       <div>
         <Link to="/">
           <img src={logo} alt="logo" className="lg:max-h-14  max-h-9  " />
@@ -71,15 +71,12 @@ function Navbar() {
             )}
           </button>
         </div>
-<<<<<<< HEAD
         <div
           className={` ${
             toggle ? "flex" : "hidden"
           } p-3   absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}
         >
-=======
-        <div className={` ${toggle ? "flex" : "hidden"} p-3 bg-white  absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}>
->>>>>>> rahulkarakoti
+
           <div className="   w-full ">
             {navItems.map((item, index) => {
               return (
