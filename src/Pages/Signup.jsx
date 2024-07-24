@@ -2,18 +2,20 @@ import React from 'react'
 
 function Signup() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-orange-400">
-      <div className="flex flex-row items-center w-full max-w-4xl">
-        <div className="w-1/2 p-8">
-          <div className="flex items-center justify-center h-full">
+
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#fff]">
+      <div className="flex flex-row items-center w-full max-w-4xl bg-[#E6511A]">
+        <div className="w-1/2 p-8 ">
+        <div className="flex items-center justify-center h-full">
             <img
-              src="../assets/signup.png"
+              src="signup.png"
               alt="Sign Up"
               className="w-full h-auto"
             />
           </div>
         </div>
-        <div className="w-1/2 p-8 bg-gray-100 shadow-lg">
+      
+        <div className="w-1/2 p-8 bg-gray-100 shadow-2xl ">
           <h2 className="mb-6 text-2xl font-bold text-center">SIGN UP</h2>
           <form className="flex flex-col">
             <div className="flex mb-4">
@@ -40,13 +42,13 @@ function Signup() {
             />
             <button
               type="submit"
-              className="p-2 text-white bg-orange-500 rounded hover:bg-orange-600"
+              className="p-2 text-white bg-[#E6511A] rounded hover:bg-orange-700"
             >
               SIGN UP
             </button>
           </form>
           <div className="flex justify-center mt-4 space-x-4">
-            <button className="p-2 text-black bg-white rounded-full shadow hover:bg-gray-200">
+            <button className="p-2 text-black bg-[E6511A] rounded-full shadow hover:bg-gray-200">
               <i className="fab fa-google"></i>
             </button>
             <button className="p-2 text-black bg-white rounded-full shadow hover:bg-gray-200">

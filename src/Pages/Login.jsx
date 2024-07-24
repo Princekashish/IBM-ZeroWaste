@@ -5,6 +5,13 @@ function Login() {
     <div className="flex h-screen">
       <div className="flex-1 flex items-center justify-center bg-orange-500 text-white">
         <div className="text-center">
+          <div className="flex items-center justify-center h-full">
+            <img
+              src="../assets/login.png"
+              alt="Log in"
+              className="w-full h-auto"
+            />
+          </div>
           <h2 className="text-4xl mb-4">Welcome to Login</h2>
           <p className="text-lg mb-6">Don't have an account?</p>
           <button className="bg-white text-orange-500 py-2 px-6 rounded-full">Sign Up</button>
