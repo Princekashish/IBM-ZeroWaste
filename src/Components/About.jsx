@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Button from "./Button";
 
 export default function About() {
   const marque = [
@@ -16,11 +15,11 @@ export default function About() {
     { img: "./10.svg" },
   ];
   return (
-    <div className="font-poppins  p-5 min-h-screen lg:  " >
-      <h1 className=" text-[#e6511a] text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center">
+    <div className="font-poppins  p-5 min-h-screen     " >
+      <h1 className=" text-[#e6511a] md:text-xl text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center md:text-center">
         About us
       </h1>
-      <h1 className=" text-black font-poppins text-2xl font-bold lg:text-center">
+      <h1 className=" text-black font-poppins text-2xl font-bold lg:text-center md:text-center">
         Passionate People Making a Difference in the Fight Against Hunger
       </h1>
       <div className="mt-5 flex flex-col justify-center items-center lg:flex-row gap-10 lg:mt-10">
@@ -29,7 +28,7 @@ export default function About() {
             <img
               src="./aboutq1(2).png"
               alt="about"
-              className="w-[300px] h-[130px] lg:h-[180px]"
+              className="w-[300px] h-[130px] lg:h-[180px] md:h-[180px]"
             />
           </div>
           <div>
@@ -37,7 +36,7 @@ export default function About() {
           </div>
         </div>
         <div>
-          <h1 className=" text-black text-sm font-light lg:w-[490px]">
+          <h1 className="md:text-xl text-black text-sm font-light lg:w-[490px]">
             we are committed to eradicating hunger and providing nutritious
             meals to those in need. Our mission is to connect generous donors
             with food-insecure communities, ensuring that no one goes to bed

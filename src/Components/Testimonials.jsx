@@ -66,7 +66,7 @@ export default function Testimonials() {
                 {service.map((items, i) => (
                   <SwiperSlide
                     key={i}
-                    className={`h-[450px] rounded-2xl flex flex-col justify-start items-center  bg-[#ECEBEB] pt-5`}
+                    className={`h-[450px] md:text-xl md:p-10 rounded-2xl flex flex-col justify-start items-center  bg-[#ECEBEB] pt-5`}
                   >
                     <p className="p-2 text-base tracking-tight font-light mt-5 text-center">
                       {items.feedback}
@@ -79,7 +79,7 @@ export default function Testimonials() {
                       />
                       <div className="flex flex-col justify-start items-start">
                         <h1>{items.name}</h1>
-                        <p className="text-xs">{items.place}</p>
+                        <p className="text-xs ">{items.place}</p>
                       </div>
                     </div>
                   </SwiperSlide>

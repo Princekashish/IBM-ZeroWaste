@@ -26,11 +26,11 @@ export default function Service() {
     },
   ];
   return (
-    <div className="font-poppins  p-5 min-h-screen lg:p-10">
-      <h1 className=" text-[#e6511a] text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center">
+    <div className="font-poppins  p-5  lg:p-10  ">
+      <h1 className=" text-[#e6511a] md:text-xl md:text-center text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center">
         Our services
       </h1>
-      <h1 className=" text-black font-poppins text-2xl font-bold lg:text-center lg:text-4xl">
+      <h1 className="md:text-2xl md:text-center  md:pt-5 text-black font-poppins text-2xl font-bold lg:text-center lg:text-4xl">
         We are in a mission to help
       </h1>
       {/* slider */}
@@ -59,7 +59,7 @@ export default function Service() {
             {service.map((items, i) => (
               <SwiperSlide
                 key={i}
-                className={`h-80 rounded-2xl flex flex-col justify-center items-center ${
+                className={`h-80  rounded-2xl flex flex-col justify-center items-center ${
                   i % 2 === 0 ? "bg-[#ECEBEB]" : "bg-[#E6501B]"
                 }`}
               >
@@ -80,7 +80,7 @@ export default function Service() {
                   </h1>
                 </div>
                 <p
-                  className={`p-2 text-sm font-light mt-5 text-center ${
+                  className={`p-2 md:p-10 md:text-xl text-sm font-light mt-5 text-center ${
                     i % 2 === 0 ? "text-black" : "text-white"
                   }`}
                 >
@@ -133,7 +133,7 @@ export default function Service() {
         <h1 className="text-white font-poppins text-4xl font-bold tracking-tighter  leading-10 lg:tracking-wider">
           Why donation is important.....?
         </h1>
-        <p className="text-white text-sm mt-2 font-light ">
+        <p className="text-white text-sm mt-2 font-light md:text-xl">
           Food donations offer numerous benefits, both to the recipients and the
           broader community. They directly combat hunger and food insecurity,
           ensuring that individuals and families in need have access to
