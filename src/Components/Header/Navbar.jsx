@@ -54,7 +54,7 @@ function Navbar() {
           })}
         </div>
         <div>
-          <Link to="/Signup">
+          <Link to="/signup">
             {" "}
             <Button msg="LOGIN" />
           </Link>
