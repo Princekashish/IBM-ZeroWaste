@@ -6,9 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'banner': "url('/banner2.png')",
+        'feedback': "url('/image496.png')",
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+    
     },
   },
   plugins: [],

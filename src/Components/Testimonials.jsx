@@ -31,7 +31,7 @@ export default function Testimonials() {
   return (
     <div className="font-poppins  p-5 lg:p-10">
       <div className="bg-[#e6511a] rounded-2xl h-[586px]">
-        <div className='bg-[url("./image496.png")]   bg-cover bg-center bg-no-repeat h-[586px] rounded-2xl text-center '>
+        <div className='bg-feedback   bg-cover bg-center bg-no-repeat h-[586px] rounded-2xl text-center '>
           <h1 className=" text-white font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-[35px] lg:uppercase lg:text-black">
             Testimonials
           </h1>

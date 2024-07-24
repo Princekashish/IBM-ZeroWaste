@@ -16,7 +16,7 @@ export default function About() {
     { img: "./10.svg" },
   ];
   return (
-    <div className="font-poppins  p-5 min-h-screen lg:p-10" >
+    <div className="font-poppins  p-5 min-h-screen lg:  " >
       <h1 className=" text-[#e6511a] text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center">
         About us
       </h1>
@@ -70,7 +70,7 @@ export default function About() {
       </div>
       {/* banner2 */}
       <div>
-        <div className="bg-[url('./banner2.png')]  bg-cover bg-center bg-no-repeat h-[300px] mt-10 rounded-2xl flex justify-center items-center flex-col">
+        <div className="bg-banner   bg-cover bg-center bg-no-repeat h-[300px] mt-10 rounded-2xl flex justify-center items-center flex-col">
         <h1 className=" text-center text-white text-2xl font-bold tracking-tight p-4 font-poppins">You can contribute to provide a meal to the people with needs...!</h1>
         <div className="flex justify-center items-center gap-3 p-5">
            <button className="bg-black text-white px-7 py-3 rounded-full border border-white capitalize outline-none focus:scale-110 hover:scale-110 transition">Join Us as volunteer</button>
