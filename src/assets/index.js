@@ -1,5 +1,4 @@
 import logo from "./logo.png"
-// import signup from "./signup.png"
 import location from "./location.svg"
 import mail from "./mail.svg"
 import phone from "./phone.svg"
@@ -8,11 +7,8 @@ import image1 from "./image1.png"
 import gallery from "./gallery.png"
 import blogbg from "./blogbg.png"
 import cardimg from "./cardimg.png"
-
-
 export{
     logo,
-    // singup,
     location,
     mail,
     Educationbanner,
@@ -21,5 +17,4 @@ export{
     gallery,
     blogbg,
     cardimg
-
 }

@@ -16,7 +16,7 @@ export default function About() {
     { img: "./10.svg" },
   ];
   return (
-    <div className="font-poppins  p-5 min-h-screen lg:  " >
+    <div id="about" className="font-poppins  p-5 min-h-screen lg:  " >
       <h1 className=" text-[#e6511a] text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center">
         About us
       </h1>

@@ -15,7 +15,7 @@ function Navbar() {
     },
     {
       name: "About",
-      link: "/aboutus",
+      link: "#about",
     },
     {
       name: "Testimanials",
@@ -32,7 +32,7 @@ function Navbar() {
   ];
 
   return (
-    <div className=" bg-[#EEF7F8] lg:p-6 p-3 flex justify-between items-center w-full">
+    <div className="sticky top-0 shadow-md bg-[#EEF7F8] lg:p-5 p-4 flex justify-between items-center w-full">
       <div>
         <Link to='/'>
         <img src={logo} alt="logo" className="lg:max-h-14  max-h-9  " />
@@ -83,9 +83,10 @@ function Navbar() {
               );
             })}
             <div>
-              <Button msg="LOGIN" />
+              <Button msg="LOGIN"  />
             </div>
           </div>
+           
         </div>
       </div>
     </div>

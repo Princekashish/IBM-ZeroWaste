@@ -26,7 +26,7 @@ function Education() {
       </div>
       <div className="text-center py-9 flex-col justify-center items-center   ">
         <div>
-          <h1 className="text-[41px] font-semibold">IMPORTANCE OF DONATION</h1>
+          <h1 className="text-[41px] font-semibold tracking-widest ">IMPORTANCE OF DONATION</h1>
           <p className=" flex items-center justify-center  px-20 py-4">
             Donating is a powerful way to make a meaningful impact on the lives
             of those in need, providing you with a profound sense of purpose and
@@ -133,7 +133,7 @@ function Education() {
         }}
         className="my-8 p-2"
       >
-        <h1 className="font-semibold text-[41px] text-center">BLOG</h1>
+        <h1 className="font-semibold text-[41px] text-center tracking-[5px]">BLOG</h1>
         <div className="flex lg:gap-8 gap-2 lg:p-6 p-2 ">
           <div className="p-4 bg-black text-white w-1/3 rounded-[20px] ">
             <img src={cardimg} alt="" className=" w-full lg:h-52 h-30" />
@@ -203,7 +203,7 @@ function Education() {
           </div>
         </div>
         <div className="flex justify-center">
-        <Button msg="See More" className="bg-[#EFEFEF] text-[#e66435] rounded-lg m-4 border-2 border-black w-32"/>
+        <Button msg="See More" className="bg-[#EFEFEF] text-orange-500 rounded-lg m-4 border-2 border-black w-32"/>
         </div>
       </div>
     </div>
