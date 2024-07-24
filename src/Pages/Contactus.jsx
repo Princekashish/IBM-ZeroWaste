@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom'
 
 function Contactus() {
   const cardItem=[
+
     {
       title:"Address",
       content:"Elliott Ave, Parkville VIC 3052, Melbourne Canada",
@@ -25,7 +26,7 @@ function Contactus() {
       content1:"info@gmail.com ",
       content2:" contact@gmail.com",
       icon:mail
-    }
+    }, 
   ]
 
   return (
