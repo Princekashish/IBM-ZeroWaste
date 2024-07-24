@@ -25,6 +25,10 @@ function Navbar() {
       name: "Contact",
       link: "/contact",
     },
+    {
+      name: "Education",
+      link: "/education",
+    },
   ];
 
   return (
@@ -35,7 +39,7 @@ function Navbar() {
         </Link>
       </div>
 
-      <div className="lg:flex hidden  w-1/2 items-center ">
+      <div className="lg:flex hidden  w-2/3 items-center ">
         <div className=" lg:flex  justify-around w-full ">
           {navItems.map((item, index) => {
             return (
@@ -65,7 +69,7 @@ function Navbar() {
             )}
           </button>
         </div>
-        <div className={` ${toggle ? "flex" : "hidden"} p-3   absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}>
+        <div className={` ${toggle ? "flex" : "hidden"} p-3 bg-white  absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}>
           <div className="   w-full ">
             {navItems.map((item, index) => {
               return (
