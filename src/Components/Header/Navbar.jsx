@@ -14,7 +14,7 @@ function Navbar() {
     },
     {
       name: "About",
-      link: "/aboutus",
+      link: "#about",
     },
     {
       name: "Testimanials",
@@ -24,17 +24,21 @@ function Navbar() {
       name: "Contact",
       link: "/contact",
     },
+    {
+      name: "Education",
+      link: "/education",
+    },
   ];
 
   return (
-    <div className=" bg-[#EEF7F8] lg:p-6 p-3 flex justify-between items-center w-full">
+    <div className="sticky top-0 shadow-md bg-[#EEF7F8] lg:p-5 p-4 flex justify-between items-center w-full">
       <div>
         <Link to="/">
           <img src={logo} alt="logo" className="lg:max-h-14  max-h-9  " />
         </Link>
       </div>
 
-      <div className="lg:flex hidden  w-1/2 items-center ">
+      <div className="lg:flex hidden  w-2/3 items-center ">
         <div className=" lg:flex  justify-around w-full ">
           {navItems.map((item, index) => {
             return (
@@ -67,11 +71,15 @@ function Navbar() {
             )}
           </button>
         </div>
+<<<<<<< HEAD
         <div
           className={` ${
             toggle ? "flex" : "hidden"
           } p-3   absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}
         >
+=======
+        <div className={` ${toggle ? "flex" : "hidden"} p-3 bg-white  absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}>
+>>>>>>> rahulkarakoti
           <div className="   w-full ">
             {navItems.map((item, index) => {
               return (
@@ -84,9 +92,10 @@ function Navbar() {
               );
             })}
             <div>
-              <Button msg="LOGIN" />
+              <Button msg="LOGIN"  />
             </div>
           </div>
+           
         </div>
       </div>
     </div>

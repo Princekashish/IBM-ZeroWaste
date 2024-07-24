@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 export default function Service() {
   const service = [
@@ -142,7 +143,7 @@ export default function Service() {
           their overall health and well-being.
         </p>
         <div>
-            <button  className="bg-[#e6511a] text-white px-7 py-2 rounded-full capitalize outline-none focus:scale-110 hover:scale-110 transition">Learn more</button>
+            <Link to={'/education'}  className="bg-[#e6511a] text-white px-7 py-2 rounded-full capitalize outline-none focus:scale-110 hover:scale-110 transition">Learn more</Link>
         </div>
       </div>
     </div>

@@ -17,6 +17,7 @@ export default function About() {
   return (
     <div className="font-poppins  p-5 min-h-screen     " >
       <h1 className=" text-[#e6511a] md:text-xl text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center md:text-center">
+
         About us
       </h1>
       <h1 className=" text-black font-poppins text-2xl font-bold lg:text-center md:text-center">
