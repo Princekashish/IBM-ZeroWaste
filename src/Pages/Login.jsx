@@ -1,4 +1,5 @@
 import React from 'react';
+import { login } from '../assets';
 
 function Login() {
   return (
@@ -7,7 +8,7 @@ function Login() {
         <div className="text-center">
           <div className="flex items-center justify-center h-full">
             <img
-              src="../assets/login.png"
+              src={login}
               alt="Log in"
               className="w-full h-auto"
             />

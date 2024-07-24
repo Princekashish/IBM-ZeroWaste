@@ -1,70 +1,68 @@
 import React from 'react'
+import { signup } from '../assets';
 
 function Signup() {
   return (
-
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#fff]">
-      <div className="flex flex-row items-center w-full max-w-4xl bg-[#E6511A]">
-        <div className="w-1/2 p-8 ">
-        <div className="flex items-center justify-center h-full">
-            <img
-              src="signup.png"
-              alt="Sign Up"
-              className="w-full h-auto"
-            />
-          </div>
-        </div>
-      
-        <div className="w-1/2 p-8 bg-gray-100 shadow-2xl ">
-          <h2 className="mb-6 text-2xl font-bold text-center">SIGN UP</h2>
-          <form className="flex flex-col">
-            <div className="flex mb-4">
-              <input
-                type="text"
-                placeholder="Enter Name"
-                className="flex-1 p-2 mr-2 border border-gray-300 rounded"
-              />
-              <input
-                type="email"
-                placeholder="Email ID"
-                className="flex-1 p-2 ml-2 border border-gray-300 rounded"
-              />
+    <div className="min-h-screen bg-gray-100 flex flex-col justify-center items-center p-4">
+        <div className="w-full max-w-4xl flex flex-col md:flex-row bg-white shadow-2xl rounded-lg overflow-hidden  shadow-slate-800">
+            <div className="w-full md:w-1/2 bg-[#E6511A] flex flex-col justify-center items-center p-8 ">
+                <img
+                    src= {signup}
+                    alt="Sign Up Illustration"
+                    className="h-40 w-40"
+                />
+                <h2 className="text-white text-3xl font-bold mt-4">Welcome to Sign Up</h2>
             </div>
-            <input
-              type="text"
-              placeholder="Create Username"
-              className="p-2 mb-4 border border-gray-300 rounded"
-            />
-            <input
-              type="password"
-              placeholder="Create Password"
-              className="p-2 mb-6 border border-gray-300 rounded"
-            />
-            <button
-              type="submit"
-              className="p-2 text-white bg-[#E6511A] rounded hover:bg-orange-700"
-            >
-              SIGN UP
-            </button>
-          </form>
-          <div className="flex justify-center mt-4 space-x-4">
-            <button className="p-2 text-black bg-[E6511A] rounded-full shadow hover:bg-gray-200">
-              <i className="fab fa-google"></i>
-            </button>
-            <button className="p-2 text-black bg-white rounded-full shadow hover:bg-gray-200">
-              <i className="fab fa-facebook"></i>
-            </button>
-            <button className="p-2 text-black bg-white rounded-full shadow hover:bg-gray-200">
-              <i className="fab fa-twitter"></i>
-            </button>
-          </div>
+            <div className="w-full md:w-1/2 p-8 bg-slate-200 ">
+                <h2 className="text-2xl font-bold mb-4">SIGN UP</h2>
+                <form className="space-y-4">
+                    <div className="flex flex-col md:flex-row md:space-x-4 ">
+                        <input
+                            type="text"
+                            placeholder="Enter Name "
+                            className="w-full md:w-1/2 p-2 pl-4 mb-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#eebeac]"
+                            required
+                        />
+                        <input
+                            type="email"
+                            placeholder="Email ID"
+                            className="w-full md:w-1/2 p-2 pl-4 mb-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#eebeac]"
+                            required
+                        />
+                    </div>
+                    <input
+                        type="text"
+                        placeholder="Create Username"
+                        className="w-full p-2 pl-4 mb-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#eebeac]"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Create Password"
+                        className="w-full p-2 pl-4 mb-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#eebeac]"
+                        required
+                    />
+                    <button
+                        type="submit"
+                        className="w-full bg-[#E6511A] text-white py-2 mb-2 rounded-md font-bold hover:bg-[#cf4614] transition duration-200"
+                    >
+                        SIGN UP
+                    </button>
+                </form>
+                <div className="flex justify-center mt-4 space-x-4">
+                    <button className="bg-gray-100 p-2 rounded-full">
+                        <img src="https://images.app.goo.gl/4B6QHgfTo5b578dA8" alt="Google" />
+                    </button>
+                    <button className="bg-gray-100 p-2 rounded-full">
+                        <img src="https://images.app.goo.gl/4B6QHgfTo5b578dA8" alt="Facebook" />
+                    </button>
+                    <button className="bg-gray-100 p-2 rounded-full">
+                        <img src="https://images.app.goo.gl/4B6QHgfTo5b578dA8" alt="Twitter" />
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
-      <button className="absolute top-4 left-4 text-black hover:underline">
-        &lt; Back
-      </button>
     </div>
-  );
+);
 };
-
 export default Signup
