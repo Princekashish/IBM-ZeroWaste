@@ -5,9 +5,11 @@ import { FaArrowLeft } from "react-icons/fa";
 // import { TfiEmail } from "react-icons/tfi";
 import { location,mail,phone } from '../assets';
 import { Button } from '../Components';
+import { Link } from 'react-router-dom'
 
 function Contactus() {
   const cardItem=[
+
     {
       title:"Address",
       content:"Elliott Ave, Parkville VIC 3052, Melbourne Canada",
@@ -24,16 +26,19 @@ function Contactus() {
       content1:"info@gmail.com ",
       content2:" contact@gmail.com",
       icon:mail
-    }
+    }, 
   ]
 
   return (
     <div className=' p-4'>
        <div>
+       <Link to='/'>
+
         <h1 className=' lg:text-xl text-sm font-semibold flex gap-2 items-center'>
           <FaArrowLeft/>
           Back
         </h1>
+        </Link>
        </div>
        <div className='text-center'>
         <h1 className='lg:text-3xl text-xl font-medium text-orange-600'>Contact Us</h1>
@@ -82,7 +87,7 @@ function Contactus() {
            </div>
           <textarea name="" id="" placeholder='Enter your meassage...' className='lg:mt-7 mt-2  p-2 bg-[#E8E8E8]  border-2 border-[#838383] rounded-[6px] lg:w-[914px] w-[400px] lg:h-[291px] h-[150px]'></textarea>
           
-          <Button msg="SUBMIT MESSAGE"  className='p-2 m-2 w-[200px]' />
+          <Button msg="SUBMIT "  className='p-2 m-2 ' />
         </form>
         </div>
       </div>

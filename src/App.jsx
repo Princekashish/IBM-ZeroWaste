@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./App.css";
-import { Outlet } from "react-router-dom";
 import { Footer, Navbar } from "./Components";
+import { Outlet } from "react-router-dom";
 
 function App() {
-  return (
 
+  return (
     <>
       <div className="bg-[#EEF7F8]">
         <Navbar />
@@ -15,8 +15,6 @@ function App() {
         <Footer />
       </div>
     </>
-
-   
   );
 }
 

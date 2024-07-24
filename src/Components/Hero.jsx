@@ -8,7 +8,7 @@ import { Autoplay, Navigation, Scrollbar } from "swiper/modules";
 
 function Hero() {
   return (
-    <div className="h-[80vh] mt-10">
+    <div className="h-[80vh] lg:h-[70vh] mt-10">
       <div className="flex flex-col justify-center items-center  gap-10 lg:flex-row lg:p-10 lg:justify-around">
         <div className="space-y-5 p-5 ">
           <h1 className=" text-black font-poppins text-4xl lg:text-6xl font-bold text-center lg:text-start  lg:tracking-wider">
