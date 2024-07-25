@@ -4,7 +4,7 @@ function Button({msg, className=""}) {
   return (
     <div>
       <button
-      className={`${className} bg-[#E6511A]  lg:w-36 lg:h-12 rounded-full  font-semibold`}
+      className={`${className} bg-[#E6511A]  `}
       >{msg}</button>
     </div>
   )

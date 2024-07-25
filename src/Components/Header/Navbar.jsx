@@ -31,68 +31,90 @@ function Navbar() {
   ];
 
   return (
-    <div className="sticky top-0 shadow-md bg-[#EEF7F8] lg:p-5 p-4 flex justify-between items-center w-full z-20">
+    <div className="sticky top-0 font-poppins shadow-sm bg-[#EEF7F8] xl:p-5 p-2 flex justify-between items-center w-full z-20">
       <div>
         <Link to="/">
-          <img src={logo} alt="logo" className="lg:max-h-14  max-h-9  " />
+          <img
+            src={logo}
+            alt="logo"
+            className="xl:w-[167px] xl:h-[56px] w-[127px] h-[46px]   "
+          />
         </Link>
       </div>
 
-      <div className="lg:flex hidden  w-2/3 items-center ">
-        <div className=" lg:flex  justify-around w-full ">
+      <div className="lg:flex hidden xl:gap-14 xl:items-center">
+        <div className=" lg:flex   w-full xl:gap-7 ">
           {navItems.map((item, index) => {
             return (
-              <Link to={item.link}>
-                <div
-                  key={index}
-                  className="font-bold text-xl ]cursor-pointer text-[#484848]"
+              <div key={index} className=" ]cursor-pointer text-[#484848]  ">
+                <Link
+                  to={item.link}
+                  className="hover:border-b-2 hover:border-black "
                 >
-                  <h4>{item.name}</h4>
-                </div>
-              </Link>
+                  {item.name}
+                </Link>
+              </div>
             );
           })}
         </div>
         <div>
           <Link to="/signup">
             {" "}
-            <Button msg="LOGIN" />
+            <Button
+              msg="Signup"
+              className="xl:py-2 px-7 text-white rounded-full "
+            />
           </Link>
         </div>
       </div>
 
-      <div className="lg:hidden flex-col felx-1 justify-end  ">
+      <div className="lg:hidden flex-col felx-1 justify-end ">
         <div>
           <button onClick={() => setToggle((prev) => !prev)}>
             {!toggle ? (
               <GiHamburgerMenu size={30} />
             ) : (
-              <IoCloseSharp size={30} />
+              <IoCloseSharp size={30} className="absolute z-10 right-5 top-4" />
             )}
           </button>
         </div>
+
         <div
           className={` ${
             toggle ? "flex" : "hidden"
-          } p-3   absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}
+          }   absolute top-0 right-0 left-0 p-5   bg-[#EEF7F8] h-screen flex flex-col   transition-opacity duration-500 ease-in-out`}
         >
+          <div>
+            <Link to="/">
+              <img src={logo} alt="logo" className=" w-[127px] h-[46px]   " />
+            </Link>
+          </div>
 
-          <div className="   w-full ">
+          <div className="   w-full mt-10 flex flex-col gap-3  h-full">
             {navItems.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="font-bold text-xl ]cursor-pointer text-[#484848]"
+                  className=" text-xl cursor-pointer text-[#484848]"
                 >
-                  <h4>{item.name}</h4>
+                  <Link to={item.link}>{item.name}</Link>
                 </div>
               );
             })}
-            <div>
-              <Button msg="LOGIN"  />
+            <Link
+              to={"/singup"}
+              className="mt-2  text-xl cursor-pointer text-[#484848]"
+            >
+              Signup
+            </Link>
+
+            <div className="mt-10  absolute bottom-16   left-16 ">
+              <Button
+                msg="Donate"
+                className="px-28 py-3 text-white bg-black rounded-full"
+              />
             </div>
           </div>
-           
         </div>
       </div>
     </div>
