@@ -59,7 +59,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="lg:hidden flex-col felx-1 justify-end  ">
+      <div className="lg:hidden flex-col felx-1 justify-end ">
         <div>
           <button onClick={() => setToggle((prev) => !prev)}>
             {!toggle ? (
@@ -73,6 +73,7 @@ function Navbar() {
           <div className="   w-full ">
             {navItems.map((item, index) => {
               return (
+              <Link to={item.link}>
                 
                 <div
                   key={index}
@@ -80,10 +81,11 @@ function Navbar() {
                 >
                   <h4>{item.name}</h4>
                 </div>
+                </Link>
               );
             })}
             <div>
-              <Button msg="LOGIN"  />
+              <Button msg="LOGIN" className="sm:text-lg text-xs p-2"  />
             </div>
           </div>
            
