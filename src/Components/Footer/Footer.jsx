@@ -55,13 +55,14 @@ function Footer() {
         </div>
       </div>
       <div className="bg-[#2D2D2D] xl:bg-black flex justify-center flex-col xl:flex-col-reverse items-center h-14 p-5 ">
-        <p className="  text-[#979797] xl:text-white text-[14px] xl:text-[10px]">
-          © 2024 IBM. All rights reserved.{" "}
-        </p>
+       
         <div className="text-white text-[10px] flex gap-5 ">
           <p className="underline">Terms of Service</p>
           <p className="underline">Privacy Policy </p>
         </div>
+        <p className="  text-[#979797] xl:text-white text-[14px] xl:text-[10px]">
+          © 2024 IBM. All rights reserved.{" "}
+        </p>
       </div>
     </>
   );

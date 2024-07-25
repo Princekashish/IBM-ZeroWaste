@@ -3,15 +3,15 @@ import { signup } from "../assets";
 
 function Signup() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-orange-400">
+    <div className="flex flex-col items-center justify-center h-[60vh] bg-[#EEF7F8] ]">
       <div className="flex flex-row items-center justify-center  w-full ">
         <div className="w-1/2 p-8 hidden xl:block">
           <div className="flex items-center justify-center h-full">
             <img src={signup} alt="Sign Up" className="w-full h-auto" />
           </div>
         </div>
-        <div className=" p-8 bg-gray-100 shadow-lg rounded-2xl">
-          <h2 className="mb-6 text-2xl font-bold text-center">SIGN UP</h2>
+        <div className=" xl:p-8 bg-zinc-900 shadow-lg rounded-2xl w-[320px] p-5 ">
+          <h2 className="mb-6 text-2xl font-bold text-center text-white">SIGN UP</h2>
           <form className="flex flex-col gap-5">
             <input
               type="text"

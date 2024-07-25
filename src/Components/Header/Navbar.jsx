@@ -10,7 +10,7 @@ function Navbar() {
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "#home",
     },
     {
       name: "About",
@@ -31,7 +31,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="sticky top-0 font-poppins shadow-sm bg-[#EEF7F8] xl:p-5 p-2 flex justify-between items-center w-full z-20">
+    <div className="sticky top-0 font-poppins shadow-sm bg-[#EEF7F8] xl:p-5  pl-5 pr-5 p-2 flex justify-between items-center w-full z-20">
       <div>
         <Link to="/">
           <img
@@ -84,7 +84,7 @@ function Navbar() {
             toggle ? "flex" : "hidden"
           }   absolute top-0 right-0 left-0 p-5   bg-[#EEF7F8] h-screen flex flex-col   transition-opacity duration-500 ease-in-out`}
         >
-          <div>
+          <div onClick={() => setToggle(false)}>
             <Link to="/">
               <img src={logo} alt="logo" className=" w-[127px] h-[46px]   " />
             </Link>
@@ -95,20 +95,29 @@ function Navbar() {
               return (
                 <div
                   key={index}
-                  className=" text-xl cursor-pointer text-[#484848]"
+                  className="text-xl cursor-pointer text-[#484848]"
                 >
-                  <Link to={item.link}>{item.name}</Link>
+                  {item.link.startsWith("#") ? (
+                    <a href={item.link} onClick={() => setToggle(false)}>
+                      {item.name}{" "}
+                    </a>
+                  ) : (
+                    <Link to={item.link} onClick={() => setToggle(false)}>
+                      {item.name}
+                    </Link>
+                  )}
                 </div>
               );
             })}
             <Link
-              to={"/singup"}
+              to={"/signup"}
+              onClick={() => setToggle(false)}
               className="mt-2  text-xl cursor-pointer text-[#484848]"
             >
               Signup
             </Link>
 
-            <div className="mt-10  absolute bottom-16   left-16 ">
+            <div className="mt-10  flex justify-center items-center ">
               <Button
                 msg="Donate"
                 className="px-28 py-3 text-white bg-black rounded-full"

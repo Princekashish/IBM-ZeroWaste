@@ -1,12 +1,9 @@
 import React from "react";
 import Sponser from "./Sponser";
 
-
-
 export default function About() {
-
   return (
-    <div className="font-poppins  p-5 min-h-screen     ">
+    <div className="font-poppins p-5 min-h-screen" id="about">
       <h1 className=" text-[#e6511a] md:text-xl text-base font-semibold uppercase leading-[60px] tracking-[3.78px] lg:text-center md:text-center xl:text-sm">
         About us
       </h1>
@@ -40,7 +37,7 @@ export default function About() {
         </div>
       </div>
       {/* marque */}
-      <Sponser/>
+      <Sponser />
       {/* soliddaty pan */}
       <div className="mt-10  flex justify-center items-center">
         <img src="./Solidarity-pana (2) 1.png" alt="" />
