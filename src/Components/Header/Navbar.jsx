@@ -69,7 +69,7 @@ function Navbar() {
             )}
           </button>
         </div>
-        <div className={` ${toggle ? "flex" : "hidden"} p-3 bg-white  absolute top-20 right-0 mx-4 my-2 min-w-[140px] border-2 border-black rounded-xl  `}>
+        <div className={` ${toggle ? "flex" : "hidden"} p-3 bg-white  absolute top-20 right-0 mx-4 my-2  border-2 border-black rounded-xl  `}>
           <div className="   w-full ">
             {navItems.map((item, index) => {
               return (
