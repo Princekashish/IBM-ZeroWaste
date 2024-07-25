@@ -83,7 +83,7 @@ function Navbar() {
               );
             })}
             <div>
-              <Button msg="LOGIN"  />
+              <Button msg="LOGIN" className="sm:text-lg text-xs p-2"  />
             </div>
           </div>
            
